@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/actividadSeguimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtFechaSeguimiento"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="@dimen/textoSubtitulo"
+            android:layout_marginRight="@dimen/textoSubtitulo"
+            android:text="2020-31-12"/>
+        <TextView
+            android:id="@+id/txtActividadSeguimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginEnd="@dimen/textoSubtitulo"
+            android:layout_marginRight="@dimen/textoSubtitulo"
+            android:text="Actividad"/>
+    </LinearLayout>
+</LinearLayout>

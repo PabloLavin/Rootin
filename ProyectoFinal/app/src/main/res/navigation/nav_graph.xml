@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.login"
+        android:label="fragment_inicio_login"
+        tools:layout="@layout/fragment_inicio_login" >
+        <action
+            android:id="@+id/action_login_to_usuario_rutinas"
+            app:destination="@id/usuario_rutinas" />
+        <action
+            android:id="@+id/action_login_to_registro"
+            app:destination="@id/registro" />
+    </fragment>
+    <fragment
+        android:id="@+id/usuario_rutinas"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.usuario_rutinas"
+        android:label="fragment_usuario_rutinas"
+        tools:layout="@layout/fragment_usuario_rutinas" >
+        <action
+            android:id="@+id/action_usuario_rutinas_to_usuario_perfil"
+            app:destination="@id/usuario_perfil" />
+        <action
+            android:id="@+id/action_usuario_rutinas_to_rutina_nueva"
+            app:destination="@id/rutina_nueva" />
+        <action
+            android:id="@+id/action_usuario_rutinas_to_usuario_seguimiento"
+            app:destination="@id/usuario_seguimiento"/>
+        <action
+            android:id="@+id/action_usuario_rutinas_to_rutina_actividades"
+            app:destination="@id/rutina_actividades"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.registro"
+        android:label="fragment_inicio_registro"
+        tools:layout="@layout/fragment_inicio_registro" />
+    <fragment
+        android:id="@+id/usuario_perfil"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.usuario_perfil"
+        android:label="fragment_usuario_perfil"
+        tools:layout="@layout/fragment_usuario_perfil" />
+    <fragment
+        android:id="@+id/rutina_nueva_actividad"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.rutina_nueva_actividad"
+        android:label="fragment_rutina_nueva_actividad"
+        tools:layout="@layout/fragment_rutina_nueva_actividad">
+        <action android:id="@+id/action_rutina_nueva_actividad_to_usuario_perfil"
+            app:destination="@id/usuario_perfil"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/rutina_frecuencia"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.rutina_frecuencia"
+        android:label="fragment_rutina_frecuencia"
+        tools:layout="@layout/fragment_rutina_frecuencia" >
+        <action
+            android:id="@+id/action_rutina_frecuencia_to_usuario_perfil"
+            app:destination="@id/usuario_perfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/rutina_nueva"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.rutina_nueva"
+        android:label="fragment_rutina_nueva"
+        tools:layout="@layout/fragment_rutina_nueva">
+        <action app:destination="@id/usuario_perfil"
+            android:id="@+id/action_rutina_nueva_to_usuario_perfil"/>
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_mapa"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.actividad_mapa"
+        android:label="@id/actividad_mapa"
+        tools:layout="@layout/fragment_actividad_mapa">
+    </fragment>
+    <fragment
+        android:id="@+id/rutina_actividades"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.rutina_actividades"
+        android:label="@id/rutina_actividades"
+        tools:layout="@layout/fragment_rutina_actividades">
+        <action
+            android:id="@+id/action_rutina_actividades_to_rutina_frecuencia"
+            app:destination="@id/rutina_frecuencia"/>
+        <action
+            android:id="@+id/action_rutina_actividades_to_actividad_mapa"
+            app:destination="@id/actividad_mapa"/>
+        <action
+            android:id="@+id/action_rutina_actividades_to_editar_rutina"
+            app:destination="@id/rutina_nueva"/>
+
+        <action
+            android:id="@+id/action_rutina_actividades_to_usuario_perfil"
+            app:destination="@id/usuario_perfil" />
+        <action
+            android:id="@+id/action_rutina_actividades_to_rutina_nueva_actividad"
+            app:destination="@id/rutina_nueva_actividad" />
+    </fragment>
+    <fragment
+        android:id="@+id/usuario_seguimiento"
+        android:name="com.herlavroc.proyectofinal.ui.fragments.usuario_seguimiento"
+        android:label="fragment_usuario_seguimiento"
+        tools:layout="@layout/fragment_usuario_seguimiento" >
+        <action
+            android:id="@+id/action_usuario_seguimiento_to_usuario_perfil"
+            app:destination="@id/usuario_perfil" />
+    </fragment>
+</navigation>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Root.in</string>
+    <string name="lorem">Lorem ipsum dolor sit amet consectetur adipiscing elit natoque, facilisi ultrices quisque malesuada fames leo felis, aenean proin duis ultricies suspendisse platea velit. Hac lectus auctor ut habitasse orci placerat conubia nisl quis nostra, dictumst nisi magnis est dui mattis ad curae elementum cubilia, fames porttitor ac nascetur mauris hendrerit donec a erat. Eget ante cum tellus ullamcorper dignissim sagittis, orci tristique pharetra convallis tortor, in odio integer cras suspendisse.</string>
+    <string name="loremx5">Lorem ipsum dolor sit amet consectetur adipiscing elit natoque, facilisi ultrices quisque malesuada fames leo felis, aenean proin duis ultricies suspendisse platea velit. Hac lectus auctor ut habitasse orci placerat conubia nisl quis nostra, dictumst nisi magnis est dui mattis ad curae elementum cubilia, fames porttitor ac nascetur mauris hendrerit donec a erat. Eget ante cum tellus ullamcorper dignissim sagittis, orci tristique pharetra convallis tortor, in odio integer cras suspendisse.Lorem ipsum dolor sit amet consectetur adipiscing elit natoque, facilisi ultrices quisque malesuada fames leo felis, aenean proin duis ultricies suspendisse platea velit. Hac lectus auctor ut habitasse orci placerat conubia nisl quis nostra, dictumst nisi magnis est dui mattis ad curae elementum cubilia, fames porttitor ac nascetur mauris hendrerit donec a erat. Eget ante cum tellus ullamcorper dignissim sagittis, orci tristique pharetra convallis tortor, in odio integer cras suspendisse.Lorem ipsum dolor sit amet consectetur adipiscing elit natoque, facilisi ultrices quisque malesuada fames leo felis, aenean proin duis ultricies suspendisse platea velit. Hac lectus auctor ut habitasse orci placerat conubia nisl quis nostra, dictumst nisi magnis est dui mattis ad curae elementum cubilia, fames porttitor ac nascetur mauris hendrerit donec a erat. Eget ante cum tellus ullamcorper dignissim sagittis, orci tristique pharetra convallis tortor, in odio integer cras suspendisse.Lorem ipsum dolor sit amet consectetur adipiscing elit natoque, facilisi ultrices quisque malesuada fames leo felis, aenean proin duis ultricies suspendisse platea velit. Hac lectus auctor ut habitasse orci placerat conubia nisl quis nostra, dictumst nisi magnis est dui mattis ad curae elementum cubilia, fames porttitor ac nascetur mauris hendrerit donec a erat. Eget ante cum tellus ullamcorper dignissim sagittis, orci tristique pharetra convallis tortor, in odio integer cras suspendisse.Lorem ipsum dolor sit amet consectetur adipiscing elit natoque, facilisi ultrices quisque malesuada fames leo felis, aenean proin duis ultricies suspendisse platea velit. Hac lectus auctor ut habitasse orci placerat conubia nisl quis nostra, dictumst nisi magnis est dui mattis ad curae elementum cubilia, fames porttitor ac nascetur mauris hendrerit donec a erat. Eget ante cum tellus ullamcorper dignissim sagittis, orci tristique pharetra convallis tortor, in odio integer cras suspendisse.</string>
+    <string name="logo_de_root_in">Logo de Root.in</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="hintPass">***</string>
+    <string name="entrar">Entrar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="apellido">Apellido</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="perfil">Perfil</string>
+    <string name="rutina">Rutina</string>
+    <string name="editar">Editar la rutina</string>
+    <string name="frecuencia">Frecuencia de rutina</string>
+    <string name="agregar_actividad">Agregar actividad</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="configuracion">Configuración</string>
+    <string name="dias">Días</string>
+    <string name="domingo">D</string>
+    <string name="lunes">L</string>
+    <string name="martes">M</string>
+    <string name="miercoles">M</string>
+    <string name="jueves">J</string>
+    <string name="viernes">V</string>
+    <string name="sabado">S</string>
+    <string name="meta">Meta</string>
+    <string name="recordar">Recordar un día antes</string>
+    <string name="guardar_cambios">Guardar cambios</string>
+    <string name="titulo">Título</string>
+    <string name="nueva_rutina">Nueva rutina</string>
+    <string name="agregar_nueva_rutina">Agregar Nueva Rutina</string>
+    <string name="nueva_actividad">Nueva actividad</string>
+    <string name="inicio">Inicio</string>
+    <string name="finalizado">Final</string>
+    <string name="icono">Icono</string>
+    <string name="descripcion">Lugar</string>
+    <string name="agregar_nueva_actividad">Agregar Nueva Actividad</string>
+    <string name="nombre_apellido">Nombre Apellido</string>
+    <string name="mis_rutinas">Mis rutinas</string>
+    <string name="segumiento">Segumiento</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

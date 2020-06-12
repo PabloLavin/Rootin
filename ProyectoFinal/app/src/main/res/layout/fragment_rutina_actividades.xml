@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.rutina_actividades"
+    android:background="@color/colorBackground">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:textSize="@dimen/textoTitulo"
+                android:textColor="@color/colorBackground"
+                android:layout_marginTop="10dp"/>
+            <ImageButton
+                android:id="@+id/btnRutAct_Perfil"
+                android:layout_width="@dimen/iconoTamanio"
+                android:layout_height="@dimen/iconoTamanio"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="24dp"
+                android:background="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                android:src="@drawable/perfil_icon"
+                android:contentDescription="@string/perfil"
+                android:layout_marginStart="24dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+<LinearLayout
+    android:id="@+id/panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintTop_toBottomOf="@id/my_toolbar">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="@dimen/radioEsquina"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/itemRutAct_Rutina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtRutAct_Rutina"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textoSubtitulo"
+                android:layout_marginTop="@dimen/textoSubtitulo"
+
+                android:layout_marginBottom="@dimen/textoSubtitulo"
+                android:gravity="start"
+                android:text="@string/rutina"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBackground"
+                android:textSize="@dimen/textoTitulo"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/textoSubtitulo" />
+
+            <ImageButton
+android:id="@+id/btnRutAct_Eliminar"
+                android:layout_width="@dimen/iconoTamanio"
+                android:layout_height="@dimen/iconoTamanio"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/eliminar"
+                android:scaleType="fitXY"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/delete" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/contenedorRutAct"
+        android:layout_width="match_parent"
+        android:layout_height="433dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@id/btnRutAct_Agregar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel" >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvActividades"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/rlBaseActividades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:alpha="0.4"/>
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btnRutAct_Agregar"
+        android:layout_width="165dp"
+        android:layout_height="43dp"
+        android:layout_marginHorizontal="@dimen/textoSubtitulo"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/agregar_actividad"
+        android:textColor="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

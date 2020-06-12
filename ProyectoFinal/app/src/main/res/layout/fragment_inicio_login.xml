@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.fragments.login">
+
+    <ImageView
+        android:id="@+id/imgLogin_Logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/logo_de_root_in"
+        android:src="@drawable/r_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153"
+        app:srcCompat="@drawable/r_icon" />
+
+    <EditText
+        android:id="@+id/txtLogin_Correo"
+        android:layout_width="261dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="Correo electrónico"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/correo_electronico"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogin_Logo" />
+
+    <EditText
+        android:id="@+id/txtLogin_Contra"
+        android:layout_width="265dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="***"
+        android:ems="10"
+        android:hint="@string/hintPass"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin_Correo" />
+
+    <Button
+        android:id="@+id/btnLogin_Entrar"
+        android:layout_width="168dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/entrar"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin_Contra" />
+
+    <Button
+        android:id="@+id/btnLogin_Registrar"
+        android:layout_width="167dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/registrarse"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin_Entrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

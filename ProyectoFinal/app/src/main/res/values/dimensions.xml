@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textoTitulo">25sp</dimen>
+    <dimen name="textoSubtitulo">20sp</dimen>
+    <dimen name="radioEsquina">30dp</dimen>
+    <dimen name="iconoTamanio">48dp</dimen>
+</resources>

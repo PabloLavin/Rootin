@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/actividadRutAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/chkRutAct_Realizada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5sp"
+            android:layout_marginRight="5sp"
+            />
+        <TextView
+            android:id="@+id/txtRutAct_HoraInicio"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginEnd="@dimen/textoSubtitulo"
+            android:layout_marginRight="@dimen/textoSubtitulo"
+            android:text="00:00"/>
+        <TextView
+            android:id="@+id/txtRutAct_HoraFinal"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginEnd="@dimen/textoSubtitulo"
+            android:layout_marginRight="@dimen/textoSubtitulo"
+            android:text="11:59"/>
+        <TextView
+            android:id="@+id/txtRutAct_NombreActividad"
+            android:layout_width="125dp"
+            android:layout_height="24dp"
+            android:textSize="@dimen/textoSubtitulo"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="@dimen/textoSubtitulo"
+            android:textColor="@color/colorAccent"
+            android:text="Actividad 1"/>
+        <ImageButton
+            android:id="@+id/btnRutAct_Mapa"
+            android:src="@drawable/mapa"
+            android:background="@color/colorBackground"
+            app:srcCompat="@drawable/mapa"
+            android:scaleType="fitXY"
+            android:layout_marginStart="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp" />
+        <ImageButton
+            android:id="@+id/btnRutAct_EliminarAct"
+            android:src="@drawable/deletecolor"
+            android:background="@color/colorBackground"
+            app:srcCompat="@drawable/deletecolor"
+            android:scaleType="fitXY"
+
+            android:layout_marginStart="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+</LinearLayout>

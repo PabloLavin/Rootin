@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.rutina_nueva_actividad"
+    android:background="@color/colorBackground">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:textSize="@dimen/textoTitulo"
+                android:textColor="@color/colorBackground"
+                android:layout_marginTop="10dp"/>
+            <ImageButton
+                android:id="@+id/btnRutNewAct_Perfil"
+                android:layout_width="@dimen/iconoTamanio"
+                android:layout_height="@dimen/iconoTamanio"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                android:src="@drawable/perfil_icon"
+                android:contentDescription="@string/perfil"
+                android:layout_marginStart="24dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorBackground"
+        app:cardCornerRadius="@dimen/radioEsquina"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRutNewAct_NuevaActividad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textoSubtitulo"
+                android:layout_marginTop="@dimen/textoSubtitulo"
+                android:layout_marginRight="@dimen/textoSubtitulo"
+                android:layout_marginBottom="@dimen/textoSubtitulo"
+                android:gravity="center_horizontal"
+                android:text="@string/nueva_actividad"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textoTitulo"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtRutNewAct_Titulo"
+                android:layout_width="313dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@color/colorBackground"
+                android:ems="10"
+                android:hint="@string/titulo"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHighlight="@android:color/background_light"
+                android:textColorLink="@android:color/background_light"
+                android:textSize="24sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                android:autofillHints="Título" />
+
+            <LinearLayout
+                android:layout_width="328dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/textoSubtitulo"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/textoSubtitulo"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTelefono">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inicio"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textoTitulo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/timePickerRutNewAct_Inicio"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TimePicker
+                    android:id="@+id/timePickerRutNewAct_Inicio"
+                    android:layout_width="234dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="@dimen/textoSubtitulo"
+                    android:layout_marginEnd="16dp"
+                    android:numbersBackgroundColor="@color/colorBackground"
+                    android:numbersSelectorColor="@color/colorPrimaryDark"
+                    android:numbersTextColor="@color/colorPrimaryDark"
+                    android:timePickerMode="spinner"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/textoSubtitulo"
+                android:layout_marginLeft="@dimen/textoSubtitulo"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/textoSubtitulo"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTelefono">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finalizado"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textoTitulo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/timePickerRutNewAct_Final"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TimePicker
+                    android:id="@+id/timePickerRutNewAct_Final"
+                    android:layout_width="234dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="@dimen/textoSubtitulo"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:numbersBackgroundColor="@color/colorBackground"
+                    android:numbersSelectorColor="@color/colorPrimaryDark"
+                    android:numbersTextColor="@color/colorBackground"
+                    android:timePickerMode="spinner"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginHorizontal="@dimen/textoSubtitulo"
+                android:layout_marginVertical="3dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/txtRutNewAct_Descripcion"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="@dimen/textoSubtitulo"
+                android:layout_marginRight="@dimen/textoSubtitulo"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="@string/descripcion"
+                android:lines="2"
+                android:autofillHints="@string/descripcion"
+                android:inputType="text" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnRutNewAct_NuevaActividad"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/agregar_nueva_actividad"
+        android:textColor="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

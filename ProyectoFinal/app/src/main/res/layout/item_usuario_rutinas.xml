@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rutina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="@dimen/radioEsquina"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/LblUsuRut_NombreRutina"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textoSubtitulo"
+                android:layout_marginTop="@dimen/textoSubtitulo"
+                android:layout_marginRight="@dimen/textoSubtitulo"
+                android:layout_marginBottom="@dimen/textoSubtitulo"
+                android:gravity="start"
+                android:text="@string/rutina"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBackground"
+                android:textSize="@dimen/textoTitulo"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/btnUsuRut_Seguimiento"
+                android:layout_width="@dimen/iconoTamanio"
+                android:layout_height="@dimen/iconoTamanio"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/segumiento"
+                android:scaleType="fitCenter"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/calendario" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

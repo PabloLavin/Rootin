@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "809020496314",
+    "firebase_url": "https://root-in.firebaseio.com",
+    "project_id": "root-in",
+    "storage_bucket": "root-in.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809020496314:android:2a49349588b1e7b6816583",
+        "android_client_info": {
+          "package_name": "com.herlavroc.proyectofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809020496314-oi5cf6asgo3ltmb1tirb5ibqkrffrptr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.herlavroc.proyectofinal",
+            "certificate_hash": "0e3ca1ddd30c4b90383e902d0943232205d2f95e"
+          }
+        },
+        {
+          "client_id": "809020496314-q2fbppcbv108cj9tuv2sg04c7ntv9cbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATCg3f0dNVsbXH5FBUEKZrHDZvfgp-Rmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809020496314-q2fbppcbv108cj9tuv2sg04c7ntv9cbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
